@@ -29,7 +29,7 @@ body {
 .showcase::after {
   content: '';
   width: 100%;
-  height: 75vh;
+  height: 65vh;
   display: block;
   background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
   background-size: cover;
@@ -80,6 +80,7 @@ body {
 
 .services p {
   text-align: justify;
+  margin-top: 2rem;
 }
 
 
@@ -90,6 +91,10 @@ body {
   background-color: #f4f4f4;
   text-align: center;
   padding: 4rem 2rem;
+}
+
+.about > div {
+  display: grid;
 }
 
 .about h3 {
@@ -110,4 +115,34 @@ footer {
 footer p {
   margin: 0;
   text-align: center;
+}
+
+@media(min-width: 768px) {
+  .wrapper {
+    max-width: 700px;
+  }
+  .logo {
+    width: 200px;
+  }
+
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services div {
+    padding: 4rem 1.5rem;
+  }
+
+  .services div:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .about > div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about .media {
+    display: flex;
+    align-items: center;
+  }
 }
