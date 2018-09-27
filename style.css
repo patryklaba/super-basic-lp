@@ -1,0 +1,113 @@
+/* HELPER CLASSES */
+.center {
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 280px;
+  margin: auto;
+}
+
+/* </ HELPER CLASSES> */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0,0,0,.9);
+  margin: 0;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase::after {
+  content: '';
+  width: 100%;
+  height: 75vh;
+  display: block;
+  background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+.content {
+  position: absolute;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+
+/* SERVICES */
+
+.services {
+  display: grid;
+}
+
+.services div {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.services div:not(:last-child) {
+  border-bottom: 1px dashed #999;
+}
+
+.services p {
+  text-align: justify;
+}
+
+
+/* ABOUT */
+
+.about {
+  color: #333;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.about h3 {
+  font-size: 2rem;
+}
+.about p {
+  text-align: justify;
+}
+.about div {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
